@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open-Sans' , sans-serif;
+    font-size: 16px;
+}
+
+body {
+    max-width: 1274px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.header {
+    /* border: 1px solid green; */
+    position: fixed;
+        right: calc(50% + 335px);
+}
+
+.header__logo {
+    display: inline-block;
+    height: 30px;
+    padding: 10px;
+    fill: #1da1f2;
+}
+
+.header__logo:hover {
+    background-color: rgba(142, 208, 249, 0.2);
+    border-radius: 50%;
+}
+    
+
+.header__item {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.header__item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.header__icon {
+    height: 28px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    display: inline-flex;
+    transition: 0.1s;
+    border-radius: 25px;
+}
+
+.header__item:hover .header__icon {
+    background-color: rgba(142, 208, 249, 0.2);
+    color: #1da1f2;
+    margin: 5px 5px 5px 0;
+    padding: 10px 25px 10px 10px;
+}
+
+.header__item:hover svg {
+    fill: #1da1f2;
+}
+
+.active {
+    fill: #1da1f2;
+    color: #1da1f2;
+}
+
+.header svg {
+    height: 100%;
+}
+
+.header h2 {
+    margin-left: 20px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+}
+/* поставить ширину кнопки 100% */
+.header__btn {
+    width: 225px;
+    height: 50px;
+    margin-top: 47px;
+    font: 15px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(29, 161, 242);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__btn:hover {
+    background-color: #1d7fb9;
+}
+/* ----------------------main---------------------- */
+
+.main {
+    width: 600px;
+    /* border: 1px solid red; */
+    border: 1px solid rgb(230, 236, 240);
+    margin: 0 auto;
+}
+
+.main__title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 236, 240);
+    position: fixed;
+        top: 0;
+    width: 600px;
+    background: #fff;
+}
+
+.main__title a {
+    text-decoration: none;
+    color: #000;
+    flex: 0 0 75%;
+    padding: 15px 0 15px 15px;
+}
+
+.main__title h1 {
+    font: 19px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-weight: 1000;
+}
+
+.main__info {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-sizing: content-box;
+    width: 35px;
+}
+
+.main__info svg {
+    padding: 7px;
+}
+
+.main__info:hover svg {
+    background-color: rgba(142, 208, 249, 0.2);
+    border-radius: 50%;
+}
+
+.main__tweet {
+    padding: 0 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 10px solid rgb(230, 236, 240);
+    margin-top: 75px;
+}
+
+.main__input {
+    display: flex;
+}
+
+.main__user-photo {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.main__user-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.main__tweet input {
+    font-size: 19px;
+    border: none;
+    outline: none;
+}
+
+.main__tweet input:focus {
+    opacity: 0.4;
+}
+
+.main__params {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.main__adds {
+    display: flex;
+    list-style-type: none;
+}
+
+.main__adds li {
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.main__adds li:hover {
+    background-color: rgba(142, 208, 249, 0.2);
+}
+
+.main__send {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(29, 161, 242, 0.5);
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: bold;
+}
+
+
+.main-follow__btn {
+    width: 30px;
+    height: 30px;
+    background: inherit;
+    border: none;
+}
+
+.main-follow__title {
+    align-items: center;
+}
+
+.main-follow__btn {
+    padding: 7px;
+}
+
+.main-follow__btn:hover {
+    background-color: rgba(142, 208, 249, 0.2);
+    border-radius: 50%;
+}
+
+.main-follow__item {
+    list-style-type: none;
+}
+
+.main-follow__item a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ----------------------aside---------------- */
+
+.aside {
+    position: fixed;
+    left: calc(50% + 345px);
+}
+
+.aside__form {
+    background-color: #e6ecf0;
+    width: 320px;
+    height: 45px;
+    display: flex;
+    margin: 5px 0;
+    border-radius: 20px;
+}
+
+.aside__submit {
+    width: 20px;
+    border: none;
+    background-color: inherit;
+    margin-left: 18px;
+}
+
+.aside__submit svg {
+    fill: #6d7e8d;
+}
+
+.aside__input {
+    width: 100%;
+    background-color: initial;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    font-size: 15px;
+    color: rgb(101, 119, 134);
+}
+
+.aside__trends, 
+.aside__follow {
+    width: 320px;
+    border-radius: 15px;
+    background-color: #f5f8fa;
+    margin-top: 15px;
+}
+
+.trends__title, 
+.follow__title,
+.main-follow__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.trends__title h2, 
+.follow__title h2,
+.main-follow__title h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.trends__params {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background: none;
+    border: none;
+}
+
+.trends__params:hover {
+    background-color: rgba(142, 208, 249, 0.2);
+    border-radius: 50%;
+}
+
+.trends__title svg {
+    fill: #1da1f2;
+    height: 100%;
+}
+
+.trends__list,
+.follow__item {
+    padding: 15px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.trends__list:hover,
+.trends__location:hover,
+.follow__item:hover,
+.follow__showmore:hover {
+    background-color: #e6ecf0;
+}
+
+.aside__trends a, 
+.aside__follow a {
+    text-decoration: none;
+    color: #000;
+}
+
+.trends__list h3 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #657786;
+    padding-bottom: 5px;
+}
+
+.trends__tag {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.trends__location, 
+.follow__showmore {
+    background-color: initial;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    color: #1da1f2;
+    font-size: 15px;
+}
+
+.follow__item {
+    display: flex;
+}
+
+.follow__img {
+    width: 55px;
+    padding-right: 10px;
+}
+
+.follow__img img {
+    width: 100%;
+}
+
+.follow__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow__name p {
+    color: #657786;
+    font-size: 14px;
+}
+
+.follow__info button {
+    width: 75px;
+    height: 30px;
+    background: inherit;
+    border: 1px solid #1da1f2;
+    border-radius: 20px;
+    color: #1da1f2;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.follow__info button:hover {
+    background-color: rgba(142, 208, 249, 0.2);
+}
+
+.follow__showmore {
+    font-size: 15px;
+    color: #1da1f2 !important;
+}
+
+/* ----------footer---------- */
+.footer {
+    margin-top: 15px;
+}
+
+.footer__list {
+    display: flex;
+    width: 290px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.footer__item {
+    list-style-type: none;
+    color: #657786;
+    padding-right: 13px;
+    font-size: 12px;
+}
+
+.footer__item a:hover {
+    text-decoration: underline;
+}
+
+.footer__item a {
+    text-decoration: none;
+    color: #657786;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
