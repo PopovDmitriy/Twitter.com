@@ -107,8 +107,7 @@ body {
 .header__user {
     display: flex;
     align-items: center;
-    position: absolute;
-        bottom: 15px;
+    margin-top: 15vh;
 }
 
 .header__username {
@@ -171,6 +170,7 @@ body {
     outline: none;
     box-sizing: content-box;
     width: 35px;
+    margin-right: 5px;
 }
 
 .main__info svg {
