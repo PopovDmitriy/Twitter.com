@@ -110,15 +110,24 @@ body {
     margin-top: 15vh;
 }
 
+.header__user:hover {
+    background: rgba(29, 161, 242, 0.1);
+    border-radius: 30px;
+}
+
 .header__username {
     height: 43px;
     padding-top: 11px;
     padding-left: 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #657786;
 }
 
 .header__userphoto {
     width: 43px;
     height: 43px;
+    padding-left: 10px;
 }
 
 .header__userphoto img {
@@ -131,7 +140,7 @@ body {
     width: 20px;
     height: 20px;
     margin-left: 10px;
-    background: inherit;
+    background: initial;
     border: none;
 }
 
@@ -141,6 +150,7 @@ body {
     width: 100%;
     /* border: 1px solid red; */
     border: 1px solid rgb(230, 236, 240);
+    border-bottom: none;
     margin: 0 auto;
 }
 
@@ -170,7 +180,7 @@ body {
     outline: none;
     box-sizing: content-box;
     width: 35px;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 .main__info svg {
@@ -275,6 +285,11 @@ body {
 .main-follow__item a {
     text-decoration: none;
     color: #000;
+}
+
+.main-follow__list+.follow__showmore {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 /* ----------------------aside---------------- */
@@ -449,6 +464,7 @@ body {
 .follow__showmore {
     font-size: 15px;
     color: #1da1f2 !important;
+    width: initial;
 }
 
 /* ----------footer---------- */
@@ -489,6 +505,10 @@ body {
         margin-left: 10px;
     }
 
+    .header__icon {
+        padding-right: 15px;
+    }
+
     .header__icon h2 {
         display: none;
     }
@@ -526,6 +546,11 @@ body {
     .main {
         margin: 0 10px;
     }
+
+    .main__adds li:nth-child(3),
+    .main__adds li:nth-child(5) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -534,5 +559,9 @@ body {
     }
     .main {
         margin: 0;
+    }
+
+    .main__tweet {
+        display: none;
     }
 }
