@@ -26,7 +26,6 @@ body {
     display: inline-block;
     height: 30px;
     padding: 10px;
-    fill: #1da1f2;
 }
 
 .header__logo:hover {
@@ -528,7 +527,12 @@ body {
         width: 50px;
     }
 
-    .header__user .header__username, .header__userbtn {
+    .header__userphoto {
+        padding: 5px;
+    }
+
+    .header__user .header__username, 
+    .header__userbtn {
         display: none;
     }
 }
